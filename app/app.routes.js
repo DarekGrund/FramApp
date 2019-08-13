@@ -1,16 +1,13 @@
 'use strict';
 
 angular.
-  module('phonecatApp').
+  module('app').
   config(['$routeProvider',
     function config($routeProvider) {
       $routeProvider.
-        when('/phones', {
-          template: '<phone-list></phone-list>'
+        when('/home', {
+          template: '<home-view></home-view>'
         }).
-        when('/phones/:phoneId', {
-          template: '<phone-detail></phone-detail>'
-        }).
-        otherwise('/phones');
+        otherwise('/home');
     }
   ]);
