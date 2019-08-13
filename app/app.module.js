@@ -2,5 +2,6 @@
 
 angular.module('app', [
   'ngRoute',
-  'homeView'
+  'homeView',
+  'categoryView'
 ]);

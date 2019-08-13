@@ -4,39 +4,18 @@
     <meta charset="utf-8">
     <title>AngularJS Shop</title>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-
-      <!-- Angular Material style sheet -->
       <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
-
-      <!-- Angular Material requires Angular.js Libraries -->
-      <script src="lib/angular/angular.min.js"></script>
-      <script src="lib/angular-animate/angular-animate.min.js"></script>
-      <script src="lib/angular-aria/angular-aria.min.js"></script>
-      <script src="lib/angular-messages/angular-messages.min.js"></script>
-
-      <!-- Angular Material Library -->
-      <script src="lib/angular-material/angular-material.min.js"></script>
-
-    <link rel="stylesheet" href="app.css" />
-    <script src="lib/angular-resource/angular-resource.js"></script>
-    <script src="lib/angular-route/angular-route.js"></script>
-
-    <script src="app.module.js"></script>
-    <script src="app.routes.js"></script>
-
-    <script src="views/home-view/home-view.module.js"></script>
-    <script src="views/home-view/home-view.component.js"></script>
-
+      <link rel="stylesheet" href="app.css" />
   </head>
   <body layout="column">
     <md-toolbar layout="row" layout-padding md-colors="{background: 'light-blue-600'}">
-      <h1 layout-margin>AngularJS Shop</h1>
+      <md-button ng-href="#!/home"><h1>AngularJS Shop</h1></md-button>
     </md-toolbar>
 
     <div flex layout="row">
-      <md-sidenav md-is-locked-open="true" md-colors="{background: 'blue-grey-50'}">
+      <md-sidenav flex="20" md-is-locked-open="true" md-colors="{background: 'blue-grey-50'}">
         <md-list>
-          <md-list-item ng-click="null">
+          <md-list-item ng-href="#!/category/12">
             T-Shirts
           </md-list-item>
           <md-list-item ng-click="null">
@@ -53,69 +32,31 @@
 
       <md-content layout-padding>
         <div ng-view></div>
-        <h2>Lia Luogo</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-          Officia?</p>
-        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-          vitae.</p>
-        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-          debitis doloremque eaque facere sed.</p>
-        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-          velit!</p>
-        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-          quo sunt vitae, voluptas!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-          Officia?</p>
-        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-          vitae.</p>
-        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-          debitis doloremque eaque facere sed.</p>
-        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-          velit!</p>
-        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-          quo sunt vitae, voluptas!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-          Officia?</p>
-        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-          vitae.</p>
-        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-          debitis doloremque eaque facere sed.</p>
-        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-          velit!</p>
-        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-          quo sunt vitae, voluptas!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-          Officia?</p>
-        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-          vitae.</p>
-        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-          debitis doloremque eaque facere sed.</p>
-        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-          velit!</p>
-        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-          quo sunt vitae, voluptas!</p>
       </md-content>
 
     </div>
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-animate/angular-animate.min.js"></script>
+    <script src="lib/angular-aria/angular-aria.min.js"></script>
+    <script src="lib/angular-messages/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="lib/angular-material/angular-material.min.js"></script>
+
+    <script src="lib/angular-resource/angular-resource.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.routes.js"></script>
+
+    <!-- home page   -->
+    <script src="views/home-view/home-view.module.js"></script>
+    <script src="views/home-view/home-view.component.js"></script>
+
+    <!--  category page  -->
+    <script src="views/category-view/category-view.module.js"></script>
+    <script src="views/category-view/category-view.component.js"></script>
   </body>
 </html>

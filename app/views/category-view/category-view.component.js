@@ -2,11 +2,11 @@
 
 // Register `phoneList` component, along with its associated controller and template
 angular.
-  module('homeView').
-  component('homeView', {
-    templateUrl: 'views/home-view/home-view.template.html',
+  module('categoryView').
+  component('categoryView', {
+    templateUrl: 'views/category-view/category-view.template.html',
     controller: [
-      function HomeViewController() {
+      function CategoryViewController() {
         this.test = 'Test';
       }
     ]
