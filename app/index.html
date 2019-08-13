@@ -2,7 +2,9 @@
 <html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
+    <title>AngularJS Shop</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
       <!-- Angular Material style sheet -->
       <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
 
@@ -26,9 +28,94 @@
     <script src="views/home-view/home-view.component.js"></script>
 
   </head>
-  <body>
+  <body layout="column">
+    <md-toolbar layout="row" layout-padding md-colors="{background: 'light-blue-600'}">
+      <h1 layout-margin>AngularJS Shop</h1>
+    </md-toolbar>
 
-    <div ng-view></div>
+    <div flex layout="row">
+      <md-sidenav md-is-locked-open="true" md-colors="{background: 'blue-grey-50'}">
+        <md-list>
+          <md-list-item ng-click="null">
+            T-Shirts
+          </md-list-item>
+          <md-list-item ng-click="null">
+            Shoes
+          </md-list-item>
+          <md-list-item ng-click="null">
+            Accessories
+          </md-list-item>
+          <md-list-item ng-click="null">
+            Vintage
+          </md-list-item>
+        </md-list>
+      </md-sidenav>
 
+      <md-content layout-padding>
+        <div ng-view></div>
+        <h2>Lia Luogo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
+          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
+          Officia?</p>
+        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
+          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
+          vitae.</p>
+        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
+          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
+          debitis doloremque eaque facere sed.</p>
+        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
+          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
+          velit!</p>
+        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
+          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
+          quo sunt vitae, voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
+          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
+          Officia?</p>
+        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
+          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
+          vitae.</p>
+        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
+          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
+          debitis doloremque eaque facere sed.</p>
+        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
+          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
+          velit!</p>
+        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
+          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
+          quo sunt vitae, voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
+          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
+          Officia?</p>
+        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
+          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
+          vitae.</p>
+        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
+          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
+          debitis doloremque eaque facere sed.</p>
+        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
+          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
+          velit!</p>
+        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
+          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
+          quo sunt vitae, voluptas!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
+          Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
+          Officia?</p>
+        <p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
+          nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
+          vitae.</p>
+        <p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
+          distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
+          debitis doloremque eaque facere sed.</p>
+        <p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
+          repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
+          velit!</p>
+        <p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
+          Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
+          quo sunt vitae, voluptas!</p>
+      </md-content>
+
+    </div>
   </body>
 </html>
