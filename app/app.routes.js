@@ -8,7 +8,7 @@ angular.
         when('/home', {
           template: '<home-view></home-view>'
         }).
-        when('/category/:categoryId', {
+        when('/categories/:categoryId', {
           template: '<category-view></category-view>'
         }).
         otherwise('/home');

@@ -13,22 +13,7 @@
     </md-toolbar>
 
     <div flex layout="row">
-      <md-sidenav flex="20" md-is-locked-open="true" md-colors="{background: 'blue-grey-50'}">
-        <md-list>
-          <md-list-item ng-href="#!/category/12">
-            T-Shirts
-          </md-list-item>
-          <md-list-item ng-click="null">
-            Shoes
-          </md-list-item>
-          <md-list-item ng-click="null">
-            Accessories
-          </md-list-item>
-          <md-list-item ng-click="null">
-            Vintage
-          </md-list-item>
-        </md-list>
-      </md-sidenav>
+      <categories-navigation flex="20" layout="column"></categories-navigation>
 
       <md-content layout-padding>
         <div ng-view></div>
@@ -51,12 +36,19 @@
     <script src="app.module.js"></script>
     <script src="app.routes.js"></script>
 
-    <!-- home page   -->
+    <!-- home page -->
     <script src="views/home-view/home-view.module.js"></script>
     <script src="views/home-view/home-view.component.js"></script>
 
-    <!--  category page  -->
+    <!--  category page -->
     <script src="views/category-view/category-view.module.js"></script>
     <script src="views/category-view/category-view.component.js"></script>
+
+    <!-- services -->
+    <script src="services/category/category.service.js"></script>
+
+    <!-- components -->
+    <script src="components/categories-navigation/categories-navigation.module.js"></script>
+    <script src="components/categories-navigation/categories-navigation.component.js"></script>
   </body>
 </html>

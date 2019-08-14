@@ -1,8 +1,7 @@
 'use strict';
 
-angular.module('categoryView', [
+angular.module('categoriesNavigation', [
     'ngMaterial',
     'ngMessages',
-    'ngRoute',
     'service.category'
 ]);
