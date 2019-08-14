@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Earphones 2x",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 2,
+        "name": "Echo X",
+        "description": "Accusantium consequuntur debitis doloremque eius fugit illum iure quaerat ratione saepe sapiente.",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_6.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 3,
+        "name": "Headphones XXL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_13.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 4,
+        "name": "Earphones 2x",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 5,
+        "name": "Echo X",
+        "description": "Accusantium consequuntur debitis doloremque eius fugit illum iure quaerat ratione saepe sapiente.",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_6.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 6,
+        "name": "Headphones XXL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_13.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 7,
+        "name": "Earphones 2x",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 8,
+        "name": "Echo X",
+        "description": "Accusantium consequuntur debitis doloremque eius fugit illum iure quaerat ratione saepe sapiente.",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_6.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 9,
+        "name": "Headphones XXL",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_13.jpg"
+        },
+        "promo": true
+    },
+    {
+        "id": 10,
+        "name": "Earphones 2x",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, harum?",
+        "images": {
+            "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
+        },
+        "promo": true
+    }
+]

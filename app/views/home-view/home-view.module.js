@@ -1,5 +1,7 @@
 'use strict';
 
 angular.module('homeView', [
-    'ngMaterial', 'ngMessages'
+    'ngMaterial',
+    'ngMessages',
+    'service.products'
 ]);

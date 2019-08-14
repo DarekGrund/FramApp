@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>AngularJS Shop</title>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-      <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
-      <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="app.css" />
   </head>
   <body layout="column">
     <md-toolbar layout="row" layout-padding md-colors="{background: 'light-blue-600'}">
@@ -13,12 +13,10 @@
     </md-toolbar>
 
     <div flex layout="row">
-      <categories-navigation flex="20" layout="column"></categories-navigation>
-
-      <md-content layout-padding>
+      <categories-navigation flex layout="column"></categories-navigation>
+      <md-content layout-padding flex="90">
         <div ng-view></div>
       </md-content>
-
     </div>
 
     <!-- Angular Material requires Angular.js Libraries -->
@@ -45,7 +43,8 @@
     <script src="views/category-view/category-view.component.js"></script>
 
     <!-- services -->
-    <script src="services/category/category.service.js"></script>
+    <script src="services/categories/categories.service.js"></script>
+    <script src="services/products/products.service.js"></script>
 
     <!-- components -->
     <script src="components/categories-navigation/categories-navigation.module.js"></script>

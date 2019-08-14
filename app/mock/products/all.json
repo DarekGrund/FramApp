@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "A nopromo",
+        "imgsrc": "/aasdsad/asdsad",
+        "promo": false
+    },
+    {
+        "id": 2,
+        "name": "B nopromo",
+        "imgsrc": "/aasdsad/asdsad",
+        "promo": false
+    },
+    {
+        "id": 3,
+        "name": "C promo",
+        "imgsrc": "/aasdsad/asdsad",
+        "promo": true
+    },
+    {
+        "id": 4,
+        "name": "D promo",
+        "imgsrc": "/aasdsad/asdsad",
+        "promo": true
+    }
+]

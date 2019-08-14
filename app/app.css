@@ -1,0 +1,8 @@
+.md-image-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.md-cursor-pointer {
+  cursor: pointer;
+}

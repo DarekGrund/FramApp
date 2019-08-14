@@ -1,61 +1,20 @@
-<h2>Home Page Content</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-  Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-  Officia?</p>
-<p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-  nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-  vitae.</p>
-<p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-  distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-  debitis doloremque eaque facere sed.</p>
-<p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-  repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-  velit!</p>
-<p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-  Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-  quo sunt vitae, voluptas!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-  Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-  Officia?</p>
-<p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-  nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-  vitae.</p>
-<p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-  distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-  debitis doloremque eaque facere sed.</p>
-<p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-  repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-  velit!</p>
-<p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-  Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-  quo sunt vitae, voluptas!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-  Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-  Officia?</p>
-<p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-  nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-  vitae.</p>
-<p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-  distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-  debitis doloremque eaque facere sed.</p>
-<p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-  repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-  velit!</p>
-<p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-  Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-  quo sunt vitae, voluptas!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos laboriosam laborum repudiandae unde.
-  Dolorem doloremque eaque et illo modi necessitatibus neque officia officiis quae quaerat qui, quis quos vitae.
-  Officia?</p>
-<p>Assumenda atque, commodi consectetur consequatur dolorem doloribus ea eaque inventore magni maxime nam neque
-  nesciunt nisi, non possimus quas repellendus rerum sint vel voluptatem. Distinctio enim fugiat nulla pariatur
-  vitae.</p>
-<p>Ab asperiores aspernatur eveniet fuga inventore libero sit soluta ullam, voluptates. Ad consequuntur cum
-  distinctio dolor eveniet minima necessitatibus nobis officiis! Commodi consectetur, consequatur cupiditate
-  debitis doloremque eaque facere sed.</p>
-<p>Dolor est illo tempore? Aliquam amet consectetur culpa ea eius eos illum ipsam minima minus perspiciatis
-  repellendus, rerum sit sunt veniam voluptas? Ab corporis cupiditate iure necessitatibus tempora temporibus
-  velit!</p>
-<p>Ad asperiores consectetur consequatur doloribus error laboriosam magni, nihil odit repudiandae veniam?
-  Accusantium adipisci animi autem consequuntur deserunt dolore et laboriosam magnam nam nesciunt pariatur quae
-  quo sunt vitae, voluptas!</p>
+<h2>Promoted products</h2>
+<md-grid-list
+    md-cols="5"
+    md-row-height="300px"
+    md-gutter="10px">
+
+    <md-grid-tile ng-repeat="product in vm.products.promoted"
+                  class="md-image-cover md-cursor-pointer"
+                  style="background-image: url({{ product.images.main }})"
+                  ng-click="vm.openLink(product.id)">
+        <md-grid-tile-header>
+          <h2 layout-padding layout-margin class="md-headline">{{ product.name }}</h2>
+        </md-grid-tile-header>
+        <md-grid-tile-footer>
+          <p layout-padding layout-margin>{{ product.description | limitTo:70 }}...</p>
+        </md-grid-tile-footer>
+    </md-grid-tile>
+</md-grid-list>
+
+
