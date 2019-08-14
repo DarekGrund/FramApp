@@ -1,7 +1,7 @@
 'use strict';
 
 angular.
-  module('service.category', ['ngResource']).
+  module('service.categories', ['ngResource']).
   factory('Category', ['$resource',
     function($resource) {
       return {

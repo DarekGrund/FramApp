@@ -13,8 +13,8 @@
     </md-toolbar>
 
     <div flex layout="row">
-      <categories-navigation flex layout="column"></categories-navigation>
-      <md-content layout-padding flex="90">
+      <categories-navigation flex="15" layout="column"></categories-navigation>
+      <md-content layout-padding flex="85">
         <div ng-view></div>
       </md-content>
     </div>
@@ -49,5 +49,7 @@
     <!-- components -->
     <script src="components/categories-navigation/categories-navigation.module.js"></script>
     <script src="components/categories-navigation/categories-navigation.component.js"></script>
+    <script src="components/products-list/products-list.module.js"></script>
+    <script src="components/products-list/products-list.component.js"></script>
   </body>
 </html>

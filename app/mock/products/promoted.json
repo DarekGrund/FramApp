@@ -6,6 +6,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
         },
+        "category": 1,
         "promo": true
     },
     {
@@ -15,6 +16,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_6.jpg"
         },
+        "category": 2,
         "promo": true
     },
     {
@@ -24,6 +26,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_13.jpg"
         },
+        "category": 3,
         "promo": true
     },
     {
@@ -33,6 +36,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
         },
+        "category": 1,
         "promo": true
     },
     {
@@ -42,6 +46,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_6.jpg"
         },
+        "category": 2,
         "promo": true
     },
     {
@@ -51,6 +56,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_13.jpg"
         },
+        "category": 3,
         "promo": true
     },
     {
@@ -60,6 +66,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
         },
+        "category": 1,
         "promo": true
     },
     {
@@ -69,6 +76,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_6.jpg"
         },
+        "category": 2,
         "promo": true
     },
     {
@@ -78,6 +86,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_13.jpg"
         },
+        "category": 3,
         "promo": true
     },
     {
@@ -87,6 +96,7 @@
         "images": {
             "main": "https://demostore.x-cart.com/images/product/elec_14.jpg"
         },
+        "category": 1,
         "promo": true
     }
 ]

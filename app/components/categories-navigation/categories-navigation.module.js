@@ -3,5 +3,5 @@
 angular.module('categoriesNavigation', [
     'ngMaterial',
     'ngMessages',
-    'service.category'
+    'service.categories'
 ]);

@@ -4,5 +4,6 @@ angular.module('categoryView', [
     'ngMaterial',
     'ngMessages',
     'ngRoute',
-    'service.category'
+    'service.categories',
+    'service.products'
 ]);
