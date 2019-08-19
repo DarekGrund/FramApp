@@ -11,6 +11,9 @@ angular.
         when('/categories/:categoryId', {
           template: '<category-view></category-view>'
         }).
+        when('/products/:productId', {
+          template: '<product-view></product-view>'
+        }).
         otherwise('/home');
     }
   ]);

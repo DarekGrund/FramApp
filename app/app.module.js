@@ -5,5 +5,6 @@ angular.module('app', [
   'categoriesNavigation',
   'productsList',
   'homeView',
-  'categoryView'
+  'categoryView',
+  'productView'
 ]);

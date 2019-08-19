@@ -8,6 +8,13 @@ angular.
         getAll: function() {
           return $resource('mock/products/all.json').query();
         },
+        getById: function(id) {
+          return $resource('mock/products/product-'+ id +'.json', {}, {
+            query: {
+              isArray: false
+            }
+          }).query();
+        },
         getByCategoryId: function(id) {
           return $resource('mock/products/category-'+ id +'.json').query();
         },
