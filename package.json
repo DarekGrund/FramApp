@@ -15,6 +15,7 @@
     "angular-route": "1.7.x"
   },
   "devDependencies": {
+    "@types/angular": "^1.6.56",
     "angular-mocks": "1.7.x",
     "cpx": "^1.5.0",
     "http-server": "^0.11.1",

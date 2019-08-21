@@ -1,6 +1,4 @@
-"use strict";
-var app;
-(function (app) {
+module app {
   angular.module('app', [
     'ngRoute',
     'categoriesNavigation',
@@ -9,4 +7,4 @@ var app;
     'categoryView',
     'productView'
   ]);
-})(app || (app = {}));
+}
