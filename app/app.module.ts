@@ -5,6 +5,7 @@ module app {
     'productsList',
     'homeView',
     'categoryView',
-    'productView'
+    'productView',
+    'loginButton'
   ]);
 }

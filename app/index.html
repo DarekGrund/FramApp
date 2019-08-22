@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="app.css" />
   </head>
   <body layout="column">
-    <md-toolbar layout="row" layout-padding md-colors="{background: 'light-blue-600'}">
+    <md-toolbar layout="row" layout-align="space-between" layout-padding md-colors="{background: 'light-blue-600'}">
       <md-button ng-href="#!/home"><h1>AngularJS Shop</h1></md-button>
+      <div layout="column" layout-align="center">
+        <login-button></login-button>
+      </div>
     </md-toolbar>
 
     <div flex layout="row">
@@ -51,11 +54,14 @@
     <!-- services -->
     <script src="services/categories/categories.service.js"></script>
     <script src="services/products/products.service.js"></script>
+    <script src="services/auth/auth.service.js"></script>
 
     <!-- components -->
     <script src="components/categories-navigation/categories-navigation.module.js"></script>
     <script src="components/categories-navigation/categories-navigation.component.js"></script>
     <script src="components/products-list/products-list.module.js"></script>
     <script src="components/products-list/products-list.component.js"></script>
+    <script src="components/login-button/login-button.module.js"></script>
+    <script src="components/login-button/login-button.component.js"></script>
   </body>
 </html>

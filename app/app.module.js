@@ -7,6 +7,7 @@ var app;
         'productsList',
         'homeView',
         'categoryView',
-        'productView'
+        'productView',
+        'loginButton'
     ]);
 })(app || (app = {}));
