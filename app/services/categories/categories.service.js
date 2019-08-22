@@ -23,10 +23,15 @@ angular.
     }
   ]);
 
+function mapKeyToObjectId(key, obj) {
+  return Object.assign({}, obj, {id: key});
+}
+
 function transformObjectKeysToArray(obj) {
   var arr = [];
   for(var key in obj) {
-    arr.push(obj[key]);
+    var modifiedObject = mapKeyToObjectId(key, obj[key]);
+    arr.push(modifiedObject);
   }
   return arr;
 }
