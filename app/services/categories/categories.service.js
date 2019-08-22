@@ -2,22 +2,31 @@
 
 angular.
   module('service.categories', ['ngResource']).
-  factory('Category', ['$resource',
-    function($resource) {
+  factory('Category', ['$resource', 'API_URL',
+    function($resource, API_URL) {
       return {
         getAll: function() {
-          //const t = $resource('https://project-5613440220430148247.firebaseio.com/api/v1/categories.json').query();
-          //console.log(t);
-
-          return $resource('mock/categories/all.json').query();
+          return $resource(API_URL + '/categories.json', {}, {
+            get: {
+              isArray: true,
+              transformResponse: function(data) {
+                var dataObject = angular.fromJson(data);
+                return transformObjectKeysToArray(dataObject);
+              }
+            }
+          }).get();
         },
         getById: function(id) {
-          return $resource('mock/categories/'+ id +'.json', {}, {
-            query: {
-              isArray: false
-            }
-          }).query();
+          return $resource(API_URL + '/categories/:categoryId.json').get({categoryId: id});
         }
       };
     }
   ]);
+
+function transformObjectKeysToArray(obj) {
+  var arr = [];
+  for(var key in obj) {
+    arr.push(obj[key]);
+  }
+  return arr;
+}
