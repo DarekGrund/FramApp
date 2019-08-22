@@ -6,3 +6,11 @@
 .md-cursor-pointer {
   cursor: pointer;
 }
+
+.md-promo-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+}

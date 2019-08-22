@@ -5,13 +5,19 @@
 
   <md-grid-tile ng-repeat="product in vm.products"
                 class="md-image-cover md-cursor-pointer"
-                style="background-image: url({{ product.images.main }})"
+                style="background-image: url({{ product.imageUrl }})"
                 ng-click="vm.openLink(product.id)">
     <md-grid-tile-header>
-      <h2 layout-padding layout-margin class="md-headline">{{ product.name }}</h2>
+      <div layout-padding layout-margin class="md-headline">
+        {{ product.title }}
+        <md-icon ng-if="product.promoted" md-font-library="material-icons" class="md-promo-icon"
+                 ng-style="{'font-size': '40px', width: '40px', height: '40px'}"
+                 md-colors="{color: 'red-500'}"
+        >star</md-icon>
+      </div>
     </md-grid-tile-header>
     <md-grid-tile-footer>
-      <p layout-padding layout-margin>{{ product.description | limitTo:70 }}...</p>
+      <p layout-padding layout-margin>{{ product.price | currency:$ }}</p>
     </md-grid-tile-footer>
   </md-grid-tile>
 </md-grid-list>
